@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AUTORENT</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>AUTORENT</h1>
+        <div>Panel | Fecha: <span id="fecha"></span></div>
+    </header>
+    <main>
+        <section class="card">
+            <h2>Nuevo Cliente</h2>
+            <input type="text" id="nombre" placeholder="Nombre del cliente">
+            <input type="text" id="documento" placeholder="Tipo de documento">
+            <button onclick="agregarCliente()">Agregar Cliente</button>
+            <div id="listaClientes"></div>
+        </section>
+
+        <section class="card">
+            <h2>Nuevo Vehículo</h2>
+            <input type="text" id="modelo" placeholder="Modelo del vehículo">
+            <input type="text" id="placa" placeholder="Placa">
+            <button onclick="agregarVehiculo()">Agregar Vehículo</button>
+            <div id="listaVehiculos"></div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
